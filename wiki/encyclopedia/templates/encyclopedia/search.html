@@ -1,0 +1,15 @@
+{% extends "encyclopedia/layout.html"%}
+{% block body %}
+  {%if found%}  
+    <h3> here are the related entries..</h3>
+    <ol>
+        {% for entry in found%}
+        <li> 
+            <a href="{% url 'entry' entry%}">{{entry}}</a>
+        </li>
+        {% endfor %} 
+    </ol>
+{%else%}
+    <p>No results found</p>
+{% endif %}
+{% endblock %}
