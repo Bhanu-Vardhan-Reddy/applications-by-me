@@ -1,0 +1,27 @@
+textarea {
+    min-height: 400px; /* Set minimum height for the textarea */
+    width: 100%; /* Make it responsive */
+}
+.visited {
+    background-color: rgb(234, 234, 234);
+    font-weight: 100;
+}
+.notvisited {
+    border-style:none;
+    background-color: rgb(255, 255, 255);
+    font-weight: 100;
+}
+.notvisited:hover,.visited:hover{
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.7); 
+    
+}
+.emailunit {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Align items in a row */
+    align-items: center; /* Center items vertically */
+    padding: 10px; /* Add some padding */
+}
